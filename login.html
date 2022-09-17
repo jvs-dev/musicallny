@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/singin-login/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script type="module" src="firebase/initialize.js"></script>
+</head>
+<body>
+    <main class="main">
+        <header class="main__header">
+            <p class="header__p">Não tem conta ainda?</p>
+            <a class="main__button button--header" href="singin.html">Sing-in</a>
+        </header>
+        <h1 class="main__h1">LOGIN</h1>
+        <form class="main__form" action="login">
+            <fieldset class="form__fieldset fieldset--email">
+                <legend class="form__legend">Email</legend>
+                <label for="email">
+                    <input type="email" class="form__input" name="email" id="accountEmail" required>
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset fieldset--password">
+                <legend class="form__legend">Senha</legend>
+                <label for="">
+                    <input class="form__input" min="6" type="password" name="accountPessword" id="accountPassword" required>
+                </label>
+            </fieldset>
+            <div class="flex-row flex-row--adapt">
+                <button type="button" class="main__button button--form" id="button-login">Login</button>
+                <div class="flex-row">
+                    <div class="form__checkbox"><div class="checkbox__checked"></div></div><p>Lembrar-se de mim</p>
+                </div>
+            </div>
+        </form>
+        <footer class="main__footer">
+            <p class="footer__p">Todos os direitos reservados - 2022</p>
+        </footer>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="firebase/login.js"></script>
+</body>
+</html>

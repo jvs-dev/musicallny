@@ -1,0 +1,21 @@
+:root {
+    --white: #fff;
+    --white-2: #FBFDFF;
+    --black: #000;
+    --purple: #B820FF;
+    --background-purple: #7C2CBB;
+    --blue: #00A3FF;
+    --background-blue: #0C203E;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+    overflow-y: auto;
+    background: linear-gradient(345.91deg, var(--background-blue) 24.55%, var(--background-purple) 100%);
+    color: var(--white);
+  }

@@ -1,0 +1,183 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.header__p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+.header__a {
+    cursor: pointer;
+}
+.main__h1 {
+    margin: 12vh 0px 18px 0px;
+    font-weight: 500;
+    text-align: center;
+}
+.main__footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+.main__button {
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    border: 0px;
+    color: var(--white);
+    cursor: pointer;
+}
+.button--header {
+    background-color: var(--blue);
+}
+.button--form {
+    background-color: var(--purple);
+}
+.button__loadig {
+    background: conic-gradient(from 180deg at 50% 50%, #CAE2FF 0deg, rgba(202, 226, 255, 0) 105deg, #CAE2FF 360deg);
+    height: 25px;
+    width: 25px;
+    margin: 0px 19.5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loadingRotate 2s infinite;
+}
+
+.loading__center {
+    width: 80%;
+    height: 80%;
+    background-color: var(--purple);
+    border-radius: 100%;
+}
+
+.form__fieldset {
+    width: 50%;
+    border-radius: 10px;
+    color: var(--white);
+    border-color: var(--white);
+    margin-bottom: 28px;
+}
+
+.incorrectpassword::before {
+    content: 'As senhas não correspondem!';
+    color: rgb(255, 0, 64);
+    font-size: 16px;
+}
+.minletter::before {
+    content: 'A senha deve ter no minimo de 6 caracteres!';
+    color: rgb(255, 0, 64);
+    font-size: 16px;
+}
+.incorrectemail::before {
+    content: 'E-mail incorreto ou já cadastrado!';
+    color: rgb(255, 0, 64);
+    font-size: 16px;
+}
+.loginpassworderror::before {
+    content: 'Senha incorreta!';
+    color: rgb(255, 0, 64);
+    font-size: 16px;
+}
+.loginemailerror::before {
+    content: 'E-mail incorreto!';
+    color: rgb(255, 0, 64);
+    font-size: 16px;
+}
+.fillinputs::before {
+    content: 'Por favor preencha todos os campos!';
+    color: rgb(255, 0, 64);
+    font-size: 16px;
+    width: 100%;
+    
+}
+
+.form__legend {
+    padding: 0px 4px;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.form__input {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    justify-content: center;
+    background-color: transparent;
+    border: 0px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+.form__input:focus {
+    border: 0px;
+    outline-width: 0px;
+}
+.form__input::-ms-reveal {
+    display: none;
+}
+.form__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: var(--white);
+    cursor: pointer;
+    margin-right: 4px;
+}
+.checkbox__checked {
+    height: 9px;
+    width: 9px;
+    background-color: var(--purple);
+    border-radius: 100%;
+}
+@keyframes loadingRotate {
+    0% {
+        transform: rotate(3600deg);
+    }
+    
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main__header {
+        width: 100%;
+    }
+    .form__fieldset {
+        width: 100%;
+    }
+    .main__h1 {
+        text-align: left;
+    }
+  }
+  @media only screen and (max-height: 800px) {
+    .main__h1 {
+        margin: 25px 0px 18px 0px;
+    }
+  }
