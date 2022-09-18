@@ -2,6 +2,9 @@ import { getAuth } from "firebase/auth";
 
 const auth = getAuth();
 const user = auth.currentUser;
+
+
+//Para receber informações de perfil de um usuário, use as propriedades de uma instância de User. Exemplo:
 if (user !== null) {
   // O objeto de usuário tem propriedades básicas como nome de exibição, email, etc.
   const displayName = user.displayName;

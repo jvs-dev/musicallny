@@ -1,0 +1,13 @@
+.main__button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    border: 0px;
+    color: var(--white);
+    cursor: pointer;
+}
+.button--header {
+    background-color: var(--blue);
+}
