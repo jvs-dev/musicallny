@@ -9,7 +9,7 @@
 }
 .header__menutoggle {
     font-size: 45px;
-    color: var(--purple);
+    color: var(--white);
     cursor: pointer;
 }
 .header__h1 {

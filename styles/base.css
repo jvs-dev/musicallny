@@ -13,8 +13,7 @@
     padding: 20px;
     margin: 0px;
     width: 100vw;
-    height: 100vh;
-    font-family: Poppins, sans-serif;
+    min-height: 100vh;
     overflow-y: auto;
     background: linear-gradient(345.91deg, var(--background-blue) 24.55%, var(--background-purple) 100%);
     color: var(--white);

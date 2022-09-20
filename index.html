@@ -21,6 +21,14 @@
 
 <body>
     <main class="main">
+        <menu>
+            <nav>
+                <a href="">Home</a>
+                <a href="">perfil</a>
+                <a href=""></a>
+            </nav>
+            <p></p>
+        </menu>
         <header class="main__header flex-row">
             <h1 class="header__h1">Musicallny</h1>
             <img class="header__perfilimg" id="perfilimg" src="" alt="perfil image">
@@ -33,17 +41,14 @@
         </label>
         
 
-        <h2 class="main__h2">Playlists</h2>
-        <section class="main__section">
-            <article class="section__article">
-                <img class="article__img" src="https://media.istockphoto.com/photos/trendy-girl-singing-favorite-song-out-loud-in-phone-as-mic-wearing-picture-id1256944025?s=612x612" alt="capa da musica">
-                <p class="article__p">Mustard - Ballin' ft. Roddy Ricch</p>
-            </article>
+        <h2 class="main__h2">Recomendado</h2>
+        <section class="main__section" id="section-recomendations">
+            
         </section>
 
 
-        <h2 class="main__h2">Populares</h2>
-        <section>
+        <h2 class="main__h2">Top 10 músicas</h2>
+        <section class="main__section" id="section-topmusics">
 
         </section>
 
@@ -64,6 +69,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="module" src="firebase/pages/index.js"></script>
+    <script src="components/recomendationscard.js"></script>
+    <script src="components/topmusics.js"></script>
 </body>
 
 </html>
