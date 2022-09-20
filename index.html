@@ -21,19 +21,21 @@
 
 <body>
     <main class="main">
-        <menu>
-            <nav>
-                <a href="">Home</a>
-                <a href="">perfil</a>
-                <a href=""></a>
+        <menu class="main__menu">
+            <nav class="menu__nav">
+                <a class="menu__a you" href="">Home</a>
+                <a class="menu__a" href="">Perfil</a>
+                <a class="menu__a" href="">Playlists</a>
+                <a class="menu__a" href="">Settings</a>
+                <button class="menu__button">Sign-out</button>
             </nav>
-            <p></p>
+            <p class="menu__p">Todos os direitos reservados - 2022</p>
         </menu>
         <header class="main__header flex-row">
             <h1 class="header__h1">Musicallny</h1>
             <img class="header__perfilimg" id="perfilimg" src="" alt="perfil image">
             <a class="main__button button--header" href="login.html">Login</a>
-            <ion-icon class="header__menutoggle" name="menu-outline"></ion-icon>
+            <div class="header__menutoggle"></div>
         </header>
         <label class="main__search" for="inputsearch">
             <input class="search__input" id="inputsearch" type="search" placeholder="Oque você procura?">
@@ -71,6 +73,7 @@
     <script type="module" src="firebase/pages/index.js"></script>
     <script src="components/recomendationscard.js"></script>
     <script src="components/topmusics.js"></script>
+    <script src="js/index/animation.js"></script>
 </body>
 
 </html>

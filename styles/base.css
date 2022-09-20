@@ -6,11 +6,12 @@
     --background-purple: #7C2CBB;
     --blue: #00A3FF;
     --background-blue: #0C203E;
+    --red: #FF6C6C;
   }
   
   body {
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     margin: 0px;
     width: 100vw;
     min-height: 100vh;
