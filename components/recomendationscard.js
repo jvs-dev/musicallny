@@ -2526,21 +2526,40 @@ const jsondata = [{
 const jsondatastr = JSON.stringify(jsondata)
 const recmendations = JSON.parse(jsondatastr)
 let sectionrecomendations = document.getElementById("section-recomendations")
+let music = document.getElementById("music")
+let playBtn = document.getElementById("playBtn")
+let musicControls = document.getElementById("musicControls")
 let numberoftrack = 0
 
 while(numberoftrack < jsondata[0].tracks.length) {
     let article = document.createElement("article")
     let p = document.createElement("p")
     let img = document.createElement("img")
+    let audio = document.createElement("audio")
     sectionrecomendations.insertAdjacentElement("beforeend", article)
     article.insertAdjacentElement("beforeend", img)
     article.insertAdjacentElement("beforeend", p)
+    article.insertAdjacentElement("beforeend", audio)
     img.classList.add('article__img')
     img.src = recmendations[0].tracks[numberoftrack].images.background
     article.classList.add('section__article')
+    audio.src = recmendations[0].tracks[numberoftrack].hub.actions[1].uri
+    article.onclick = function () {
+        music.src = audio.src
+        musicControls.classList.add('active')
+        playBtn.name="pause"
+        music.play()
+    }
     p.textContent = recmendations[0].tracks[numberoftrack].title;
     p.classList.add('article__p')
     numberoftrack = numberoftrack + 1
 }
 
-
+playBtn.onclick = function () {
+    if (music.play) {
+        music.pause()    
+    }
+    else {
+        music.play()
+    }
+}

@@ -22,6 +22,7 @@
 <body>
     <main class="main">
         <menu class="main__menu">
+            <ion-icon class="menu__daynight" id="daynight" name="moon"></ion-icon>
             <nav class="menu__nav">
                 <a class="menu__a you" href="">Home</a>
                 <a class="menu__a" href="">Perfil</a>
@@ -54,17 +55,18 @@
 
         </section>
 
-        <article>
-            <ion-icon name="play"></ion-icon>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <article id="musicControls" class="main__music-controls active">
+            <div id="playBtn"><ion-icon class="article__music-play" name="play"></ion-icon></div>
+            <div class="article__center">
+                <h3 class="article__music-name">Music Name</h3>
+                <div class="article__music-duration"><div class="article__duration--bar"></div></div>
+                <div class="article__music-time">
+                    <span>00:00</span>
+                    <span>01:40</span>
+                </div>
             </div>
-            <div>
-                <div><input type="range" name="" id=""></div>
-                <ion-icon name="volume-high"></ion-icon>
-            </div>
+                <ion-icon class="article__music-volume" name="volume-high"></ion-icon>
+            <audio id="music"></audio>
         </article>
     </main>
 

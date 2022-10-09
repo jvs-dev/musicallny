@@ -17,6 +17,7 @@
     min-height: 100vh;
     overflow-y: auto;
     background: linear-gradient(345.91deg, var(--background-blue) 24.55%, var(--background-purple) 100%);
+    background-attachment: fixed;
     color: var(--white);
   }
   main {

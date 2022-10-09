@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
+    margin-top: 20px;
 }
 .main__form {
     display: flex;
@@ -71,7 +72,7 @@
     font-size: 16px;
 }
 .minletter::before {
-    content: 'A senha deve ter no minimo de 6 caracteres!';
+    content: 'A senha deve ter no minimo 6 caracteres!';
     color: rgb(255, 0, 64);
     font-size: 16px;
 }
@@ -118,6 +119,7 @@
 .form__input:focus {
     border: 0px;
     outline-width: 0px;
+    background-color: transparent;
 }
 .form__input::-ms-reveal {
     display: none;
